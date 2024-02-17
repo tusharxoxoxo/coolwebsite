@@ -414,6 +414,7 @@
 	height: auto;
 	overflow: hidden;
 	border-radius: 0px;
+	margin-bottom: 5px;
 }
 
 .mainMsg p {
@@ -422,7 +423,7 @@
 
 .skills {
 	font-size: 11px;
-	height: 13px;
+	height: 17px;
 }
 
 #whoami {
