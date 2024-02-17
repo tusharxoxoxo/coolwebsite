@@ -1,0 +1,451 @@
+/*css for the header, logo,bugzorc's space,questroom*/
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	padding-top: 10px; 
+	padding-bottom: 15px;
+}
+
+.logo-and-portfolioName{
+	display: flex;
+	align-items: center;
+}
+
+.logo img {
+	height: 40px;
+	width: auto;
+	margin-right: 10px;
+}
+
+.portfolioName {
+	font-family: 'ginto';
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.learn-more {
+	text-align: right;
+}
+
+.quest {
+	color: #ff0;
+	text-shadow: 0 0 3px #ff4500,0 0 1px #ff4500,0 0 2px #ff4500,0 0 1px #ff4500,0 0 2px #ff4500;
+}
+/*end*/
+/*css for whoami, explore my space, whoami and the robot picture*/
+.whoamiDiv {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 289px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.left {
+	display: flex;
+	flex-direction: column;
+}
+
+.right{
+    height: 100%;  
+}
+
+.right img {
+    max-height: 100%; 
+    max-width: 100%; 
+}
+
+.mainMsg {
+	font-family: 'ginto';
+	font-size: 44px;
+}
+
+#whoami, #cursor {
+	font-family: "terminal";
+}
+
+#cursor {
+	display: inline-block;
+	width: 10px;
+	height: 20px;
+	background-color: black;
+	animation: blink 1s infinite;
+}
+
+@keyframes blink {
+	50% { opacity: 0; }
+}
+
+.whoamiDiv .skills #whoami {
+	font-size: 1.5em;
+	font-weight: bold;
+	height: 1.5em;
+}
+/*end*/
+/*css for the navigation tab*/
+.tab {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #2B2D31;
+	border-radius: 8px;
+	padding: 12px;
+	height: 22px;
+	cursor: pointer;
+	max-width: fit-content;
+	padding-left: 20px; 
+	padding-right: 20px;
+	margin-right: 5px;
+	margin-left: 5px;
+  
+}
+
+.nav {
+	display: flex;
+    flex-direction: row;
+	justify-content: center;
+	font-family: 'woodpecker';
+	width: 100%;
+}
+
+.navGroup {
+	display: flex;
+    flex-direction: row;
+}
+
+.tab {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #222427;
+	border-radius: 8px;
+	padding: 12px;
+	height: 22px;
+	cursor: pointer;
+	max-width: fit-content;
+	padding-left: 20px; 
+	padding-right: 20px;
+	margin-right: 5px;
+	margin-left: 5px;
+  
+}
+
+.tab.tabBlogs {
+	margin-left: 0px;
+}
+
+.tab.tabUtilities {
+	margin-right: 0px;
+}
+
+.tab:hover {
+	background-color: #270470;
+}
+
+.tab img {
+	max-height: 100%;
+	margin-right: 10px;
+}
+
+.tabimg1 {
+	border-color: #ff641d!important;
+}
+/*end*/
+/*css for idcard*/
+.idcard {
+	display: flex;
+	align-items: center;
+	background-color: #222427;
+	width: 100%;
+	overflow: hidden;
+	height: 350px;
+	border-radius: 8px;
+}
+
+.aboutMe {
+	display: flex;
+	align-items: center;
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+	padding: 10px; /* optional, adds spacing inside the box */
+}
+.reverseEngineeringSS {
+	display: flex;
+	align-items: center;
+	width: 50%;
+	height: 100px; 
+	float: left;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.normal {
+	font-family: 'normal';
+}
+
+.green {
+	color: #4EBB19;
+}
+
+.pink {
+	color: #FC1FCB;
+}
+
+.colon {
+	color: #E55B13;
+	font-weight: bold;
+}
+
+.p{
+	font-family: 'normal';
+	font-size: 20px;
+}
+
+.pnormal{
+	font-family: 'normal';
+	font-size: 14px;
+}
+/*end*/
+/*css for blogsshowcase*/
+.blogShowcase{
+	display: flex;
+	flex-direction: column;
+}
+
+.slideblog{
+	display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+}
+
+.blog1 {
+	display: flex;
+	flex-direction: column;
+	border-radius: 12px;
+	background-color: #222427;
+	transition: all 0.2s ease-in-out;
+	width: 310px;
+	height: 288px;
+	overflow: hidden;
+}
+
+.image-wrapper {
+	height: 100%;
+}
+
+.image-wrapper img {
+	max-width: 100%;
+	max-height: 100%;
+	width: 100%;
+	height: 100%; 
+}
+
+.text-wrapper {
+	padding: 10px;
+}
+
+.blog2 {
+	display: flex;
+	flex-direction: column;
+	border-radius: 12px;
+	background-color: #222427;
+	transition: all 0.2s ease-in-out;
+	width: 270px;
+	height: 288px;
+	overflow: hidden;
+}
+
+.blog2 img {
+	height: 177.38px;
+}
+
+.hover {
+	overflow: hidden;
+}
+.hover:hover {
+	transform: scale(1.05);
+}
+
+.blogcolumnTwo {
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+}
+/*end*/
+/*css for the projects part*/
+
+.slider-item {
+	background-color: #222427;
+	min-height: 120px;
+	min-width: 253px;
+	font-size: 24px;
+	padding: 16px;
+	border-radius: 8px;
+}
+
+.slideprojects {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 10px;
+}
+
+.slider-itemOne {
+	background-color: #222427;
+    min-height: 230px;
+    min-width: 45%;
+    padding: 16px;
+	padding-left: 0%;
+    border-radius: 8px;
+}
+
+.slider-itemTwo {
+	background-color: #222427;
+    min-height: 230px;
+    min-width: 49%;
+    padding: 16px;
+	padding-right: 0%;
+    border-radius: 8px;
+}
+/*end*/
+/*footer and copyright*/
+.footer {
+	background-color: #2B2D31;
+	border-radius: 8px;
+	height: 78px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.f1 {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.f1 img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.f2 {
+	max-width: 100%;
+	max-height: 100%;
+	display: flex;
+	flex-direction: column;	
+	justify-content: center;
+	gap: 8px;
+}
+
+.f2 img{
+	width: 30px;
+	height: 30px;
+}
+
+.f2 p {
+	font-family: 'normal';
+}
+
+.f3 {
+	max-width: 100%;
+	max-height: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.f3 {
+	width: 25%;
+	display: flex;
+    justify-content: space-between;
+}
+
+.nb {
+	margin: 0;
+}
+
+.robot {
+	display: flex;
+	flex-direction: row;
+}
+
+.links {
+	display: flex;
+	gap: 10px;
+}
+
+.fix2 {
+	margin: 0;
+}
+
+.copyright {
+	font-family: 'normal';
+}
+/*end*/
+/*aah shit, here we go again for mobile devices*/
+@media (max-width: 980px) {
+/*community css blocks*/
+	
+/*divs with display: none*/
+.reverseEngineeringSS, .blogcolumnTwo, .f1, .f3, .right, .slider-itemTwo, .navGroup {
+	display: none;
+}
+/*end*/
+/*css for centering child divs*/
+.slideblog, .footer, .nb {
+	display: flex;
+	justify-content: center;
+	align-items: center;  
+}
+/*end*/
+/*blog section*/
+.blogcolumnOne, .blog1, .slider-itemOne {
+	width: 100%;
+}
+/*end*/
+
+/*community css blocks end*/
+	
+/*whoami div css*/
+.whoamiDiv {
+	height: auto;
+	overflow: hidden;
+	border-radius: 0px;
+}
+
+.mainMsg p {
+	margin: 0px;		
+}
+
+.skills {
+	font-size: 11px;
+	height: 13px;
+}
+
+#whoami {
+	display: block;
+}
+/*end*/
+/*idcard css*/
+.idcard {
+	height: fit-content;
+}
+
+.aboutMe {
+	width: 100%;
+}
+
+p.normal {
+	margin: 0px;
+	
+}
+
+.aboutMe {
+	padding: 0px;
+	margin: 4px;
+}
+/*end*/
+}

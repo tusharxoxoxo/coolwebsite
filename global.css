@@ -1,0 +1,69 @@
+@font-face {
+	font-family: 'ginto'; 
+	src: url('fonts/ginto.otf') format('opentype');
+}
+@font-face {
+	font-family: 'terminal';
+	src: url('fonts/terminal.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'woodpecker';
+	src: url('fonts/woodpecker.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'normal';
+	src: url('fonts/normal.ttf') format('truetype');
+}
+
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #222427;
+}
+
+a {
+    text-decoration: none; /* Remove default link underline */
+    color: inherit; /* Inherit text color from the parent */
+}
+
+body {
+    background-color: #0f0f0f;
+	font-size: 16px;		
+}
+
+div {
+	display: block;
+    border-radius: 12px;  
+}
+
+.container {
+    display: flex;
+	align-items: center;
+}
+
+.items {
+    display: flex;
+	position: relative;
+	max-width: 879px;
+	margin: 0 auto;
+	flex-direction: column;
+	color: #ffff;
+	font-family: 'normal';
+	overflow: hidden;
+}
+
+.items > div {
+    margin-bottom: 10px; /* Set the margin between child div elements */
+}
+@media (max-width: 980px) {
+    .container {
+        width: webkit-fill-available; 
+		overflow: hidden;
+    }  
+    .items {
+        width: 100%;   
+    }
+}
