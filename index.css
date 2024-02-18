@@ -294,22 +294,54 @@
 	padding-top: 10px;
 }
 
-.slider-itemOne {
+.slider-itemOne, .slider-itemTwo {
+	display: flex;
+    justify-content: center; 
 	background-color: #222427;
-    min-height: 230px;
-    min-width: 45%;
+    height: 210px;
+    width: 47%;
     padding: 16px;
 	padding-left: 0%;
     border-radius: 8px;
+	overflow: hidden;
 }
 
-.slider-itemTwo {
-	background-color: #222427;
-    min-height: 230px;
-    min-width: 49%;
-    padding: 16px;
-	padding-right: 0%;
-    border-radius: 8px;
+.projectDesc {
+	width: 93%;
+	overflow: hidden;
+	border-radius: 0%;
+}
+
+.projectHeader, .projectDescripition, .projectStats, .projectDescription {
+	display: flex;
+	flex-direction: row;
+}
+
+.programmingClass {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.programmingClass img, .githubStars img, .download img {
+    height: 22px;
+    width: 22px;
+}
+
+.projectLogo {
+	display: flex;
+	align-items: center;
+}
+
+.projectLogo img {
+	height: 100px;
+	width: 100px;
+	border-radius: 0 0 50px 50px;
+}
+
+.projectStats {
+	display: flex;
+	justify-content: space-between;
 }
 /*end*/
 /*footer and copyright*/
@@ -408,7 +440,12 @@
 /*end*/
 
 /*community css blocks end*/
-	
+/*header css*/
+.header {
+	padding: 0;
+	margin-bottom: 0;
+}
+/*end*/
 /*whoami div css*/
 .whoamiDiv {
 	height: auto;
@@ -447,6 +484,12 @@ p.normal {
 .aboutMe {
 	padding: 0px;
 	margin: 4px;
+}
+/*end*/
+/*project*/
+.slider-itemOne, .slider-itemTwo {
+    height: 230px;
+    padding: 10px;
 }
 /*end*/
 }
