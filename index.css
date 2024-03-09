@@ -34,6 +34,13 @@
 	text-shadow: 0 0 3px #ff4500,0 0 1px #ff4500,0 0 2px #ff4500,0 0 1px #ff4500,0 0 2px #ff4500;
 }
 /*end*/
+/*css for webring*/
+.webring {
+	display: flex;
+	flex-direction: row;
+	align-content: space-between;
+}
+/*end*/
 /*css for whoami, explore my space, whoami and the robot picture*/
 .whoamiDiv {
 	display: flex;
