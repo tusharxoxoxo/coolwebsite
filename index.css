@@ -1,3 +1,51 @@
+/*css for the preloader*/
+#preloader {
+	background-color: #0f0f0f;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Display children in a column */
+    justify-content: center;
+    align-items: center;
+	z-index: 9999;
+}
+
+#loader {
+    width: 45px;
+    height: 40px;
+    background: linear-gradient(#0000 calc(1*100%/6),#fff 0 calc(3*100%/6),#0000 0),
+                linear-gradient(#0000 calc(2*100%/6),#fff 0 calc(4*100%/6),#0000 0),
+                linear-gradient(#0000 calc(3*100%/6),#fff 0 calc(5*100%/6),#0000 0);
+    background-size: 10px 400%;
+    background-repeat: no-repeat;
+    animation: matrix 1s infinite linear;
+}
+
+@keyframes matrix {
+    0% {
+        background-position: 0% 100%, 50% 100%, 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%, 50% 0%, 100% 0%;
+    }
+}
+
+#random {
+    margin-top: 20px; /* Adjust spacing as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    text-align: center; /* Center align text */
+	color: #fff; /* Set text color to white */
+}
+
+#content {
+    display: none;
+}
+/*end*/
+
 /*css for the header, logo,bugzorc's space,questroom*/
 .header {
 	display: flex;
@@ -38,7 +86,13 @@
 .webring {
 	display: flex;
 	flex-direction: row;
-	align-content: space-between;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.webring img{
+	height: 98%;
 }
 /*end*/
 /*css for whoami, explore my space, whoami and the robot picture*/
@@ -305,10 +359,8 @@
 	display: flex;
     justify-content: center; 
 	background-color: #222427;
-    height: 210px;
-    width: 47%;
-    padding: 16px;
-	padding-left: 0%;
+    height: 225px;
+    width: 49%;
     border-radius: 8px;
 	overflow: hidden;
 }
@@ -319,9 +371,18 @@
 	border-radius: 0%;
 }
 
-.projectHeader, .projectDescripition, .projectStats, .projectDescription {
+.projectHeader, .projectStats, .projectDescription {
 	display: flex;
 	flex-direction: row;
+}
+
+.projectDescription {
+	height: 114px !important;
+	padding-bottom: 2px;
+}
+
+.projectDescription p{
+	margin-top: 0 !important;
 }
 
 .programmingClass {
@@ -341,8 +402,7 @@
 }
 
 .projectLogo img {
-	height: 100px;
-	width: 100px;
+	height: 100%;
 	border-radius: 0, 0, 50px, 50px;
 }
 
@@ -350,6 +410,170 @@
 	display: flex;
 	justify-content: space-between;
 }
+
+.download {
+	border:  1px solid #0f0f0f41;
+	padding-right: 7px;
+	padding-left: 7px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.download:hover {
+	background-color: #270470;
+}
+/*css for the preview button*/
+.ui-btn {
+	border:  1px solid #0f0f0f41;;
+	--btn-padding: 15px 5px;
+	--btn-hover-bg: #270470;
+	--btn-transition: .3s;
+	--btn-animation-duration: 1.2s;
+	--btn-letter-spacing: .1rem;
+	--btn-shadow-color: #0f0f0f;
+	--btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
+	--hover-btn-color: #FAC921;
+	--default-btn-color: #fff;
+	
+  }
+  
+  /* button settings 👆 */
+  
+  .ui-btn {
+	box-sizing: border-box;
+	padding: var(--btn-padding);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: var(--btn-transition);
+	overflow: hidden;
+  }
+  
+  .ui-btn span {
+	letter-spacing: var(--btn-letter-spacing);
+	transition: var(--btn-transition);
+	box-sizing: border-box;
+	position: relative;
+	background: inherit;
+  }
+  
+  .ui-btn span::before {
+	box-sizing: border-box;
+	position: absolute;
+	content: "";
+	background: inherit;
+  }
+  
+  .ui-btn:hover, .ui-btn:focus {
+	background: var(--btn-hover-bg);
+  }
+  
+  .ui-btn:hover span, .ui-btn:focus span {
+	color: var(--hover-btn-color);
+  }
+  
+  .ui-btn:hover span::before, .ui-btn:focus span::before {
+	animation: chitchat linear both var(--btn-animation-duration);
+  }
+  
+  @keyframes chitchat {
+	0% {
+	  content: "#";
+	}
+  
+	5% {
+	  content: ".";
+	}
+  
+	10% {
+	  content: "^{";
+	}
+  
+	15% {
+	  content: "-!";
+	}
+  
+	20% {
+	  content: "#$_";
+	}
+  
+	25% {
+	  content: "№:0";
+	}
+  
+	30% {
+	  content: "#{+.";
+	}
+  
+	35% {
+	  content: "@}-?";
+	}
+  
+	40% {
+	  content: "?{4@%";
+	}
+  
+	45% {
+	  content: "=.,^!";
+	}
+  
+	50% {
+	  content: "?2@%";
+	}
+  
+	55% {
+	  content: "\;1}]";
+	}
+  
+	60% {
+	  content: "?{%:%";
+	  right: 0;
+	}
+  
+	65% {
+	  content: "|{f[4";
+	  right: 0;
+	}
+  
+	70% {
+	  content: "{4%0%";
+	  right: 0;
+	}
+  
+	75% {
+	  content: "'1_0<";
+	  right: 0;
+	}
+  
+	80% {
+	  content: "{0%";
+	  right: 0;
+	}
+  
+	85% {
+	  content: "]>'";
+	  right: 0;
+	}
+  
+	90% {
+	  content: "4";
+	  right: 0;
+	}
+  
+	95% {
+	  content: "2";
+	  right: 0;
+	}
+  
+	100% {
+	  content: "";
+	  right: 0;
+	}
+  }
+/*end*/
 /*end*/
 /*footer and copyright*/
 .footer {
@@ -359,6 +583,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-content: space-between;
 }
 
 .f1 {
@@ -390,16 +615,14 @@
 }
 
 .f3 {
-	max-width: 100%;
-	max-height: 100%;
-	display: flex;
-	flex-direction: row;
-}
-
-.f3 {
-	width: 25%;
+	height: 100%;
+	width: fit-content;
 	display: flex;
     justify-content: space-between;
+}
+
+.f3 img {
+	height: 100%;
 }
 
 .nb {
@@ -416,6 +639,14 @@
 	gap: 10px;
 }
 
+.links a img {
+    transition: all 0.2s ease-in-out; /* Define the transition effect */
+}
+
+.links a:hover img {
+    transform: scale(1.4); /* Enlarge the image by 10% on hover */
+}
+
 .fix2 {
 	margin: 0;
 }
@@ -425,7 +656,7 @@
 }
 /*end*/
 /*aah shit, here we go again for mobile devices*/
-@media (max-width: 980px) {
+@media (max-width: 850px) {
 /*community css blocks*/
 	
 /*divs with display: none*/
@@ -497,6 +728,11 @@ p.normal {
 .slider-itemOne, .slider-itemTwo {
     height: 230px;
     padding: 10px;
+}
+/*end*/
+/*webrings*/
+.webring {
+	display: none !important;
 }
 /*end*/
 }
