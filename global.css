@@ -1,8 +1,4 @@
 @font-face {
-	        font-family: 'terminal';
-	        src: url('fonts/terminal.ttf') format('truetype');
-        }
-@font-face {
 	font-family: 'ginto'; 
 	src: url('fonts/ginto.otf') format('opentype');
 }
