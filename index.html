@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
     <title>BUGZORC</title>
-    <link rel="stylesheet" href="global.css">
+    <script src="preloader.js"></script>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="global.css">
     <script src="index.js"></script>
     <script src="blogCase.js"></script>
     <meta property="og:description" content="My portfolio, where I showcase my notable work and share valuable insights. Windows/Reverse Engineering/Malware Anlysis/C++/php">
@@ -16,18 +17,38 @@
     <meta property="og:url" content="https://bugzorc.github.io/">
 </head>
 <body>
+    <div id="preloader">
+        <div id="loader"></div>
+        <div style="font-family: 'terminal';" id="random"></div>
+    </div>
+    <script>
+        var randomTexts = [
+            "my website is not slow, it's ur wifi",
+            "all praises to the most high",
+            "he got caught hash-ing passwords without salt!",
+            "nah, I code in 1s and 0s, the way God intended",
+            "I don't need antivirus, I leave debuggers open",
+            "am not useless, mosquitoes wait for me to have supper",
+            "am not broke, I declare variables using $-php developer",
+            "xss out of scope, but it's still a bug",
+        ];
+        var randomIndex = Math.floor(Math.random() * randomTexts.length);
+        var randomText = randomTexts[randomIndex];
+        var randomDiv = document.getElementById('random');
+        randomDiv.textContent = randomText;
+    </script>
     <!--CONGRATULATIONS YOU HAVE FOUND MY SECRET MESSAGE
     CODE:4335$5 1.Bugzorc 2.Casusbelli
 
     send the code: twitter/telegram/discord @bugzorc
     -->
     <!--code for oneko-->
-   	<!--[if IE]>
-  	<script src="./oneko-ie6.js"></script>
-	<![endif]-->
-	<!--[if !IE]><!-->
-   	<script src="./oneko.js"></script>
-    	<!--<![endif]-->
+    <!--[if IE]>
+    <script src="./oneko-ie6.js"></script>
+    <![endif]-->
+    <!--[if !IE]><!-->
+    <script src="./oneko.js"></script>
+    <!--<![endif]-->
     <!--end-->
     <div class="container">
         <div class="items">
@@ -39,13 +60,13 @@
                         <img src="images/gifs/pfp.gif" alt="Bugzorc's logo">
                     </div>
                     <div class="portfolioName">
-                        <p>BUGZORC'S SPACE</P>
+                        <p>BUGZORC'S SPACE</p>
                     </div>
                 </div>
                 <div class="learn-more">
                     <a href="#" class="quest">QUESTROOM</a>
                 </div>  
-            </div>	
+            </div>    
             
             <div class="whoamiDiv">
                 <div class="left">
@@ -57,8 +78,8 @@
                     </div>
                 </div>
                 <div class="right">
-                    <img src="images/staticImages/hia.png">
-                </div>	
+                    <img src="images/staticImages/hia.png" alt="Image unavailable">
+                </div>    
             </div>
             <!--end-->
             <!--navigation-->
@@ -95,13 +116,6 @@
                 </div>
             </div>
             <!--end-->
-	    <!--Webring-->
-            <div class="webring">
-                <div><a href="https://skullbunny.neocities.org/" target="_blank"><img src="images/staticImages/skullbunny-ad2.png"></a></div>
-                
-                <div><a href="https://skullbunny.neocities.org/" target="_blank"><img src="images/gifs/skullcandyTag.gif" style="height: 53px;"></a></div>
-            </div>
-            <!--end-->
             <!--idcard details-->
             <div class="idcard">
                 <div class="aboutMe">
@@ -110,13 +124,13 @@
                     <br><br><span class="green">$</span><span class="pink">hobby</span><span class="colon">: </span>In my free time, I enjoy game development and experimenting with unreal engine, I also enjoy ctfs, attack defense etc and ofcourse playing videogames... </p>
                 </div>
                 <div class="reverseEngineeringSS">
-                    <img src="images/staticImages/idcard.png">
+                    <img src="images/staticImages/idcard.png" alt="Image unavailable">
                 </div>
             </div>
             <!--end-->
             <!--blogshowcase-->
             <div class="blogShowcase">
-	            <div class="blogtitle" style=" height: 20px; align-items: center;display: inline-flex;">
+                <div class="blogtitle" style=" height: 20px; align-items: center;display: inline-flex;">
                     <b><P class="p">Read On</P></b>
                 </div>
 
@@ -125,7 +139,7 @@
                         <div class="blog1">
                             <div class="hover">
                                 <div class="image-wrapper">
-                                    <img class="blogImage" alt="IMAGE UNAVAILABLE">
+                                    <img class="blogImage" alt="Image unavailable">
                                 </div>
                             </div>
                             <div class="text-wrapper">
@@ -138,7 +152,7 @@
                         <div class="blog2">
                             <div class="hover">
                                 <div class="image-wrapper">
-                                    <img class="blogImage" alt="IMAGE UNAVAILABLE">
+                                    <img class="blogImage" alt="Image unavailable">
                                 </div>
                             </div>
                             <div class="text-wrapper">
@@ -149,7 +163,7 @@
                         <div class="blog2">
                             <div class="hover">
                                 <div class="image-wrapper">
-                                    <img class="blogImage" alt="IMAGE UNAVAILABLE">
+                                    <img class="blogImage" alt="Image unavailable">
                                 </div>
                             </div>
                             <div class="text-wrapper">
@@ -170,32 +184,37 @@
                         <div class="projectDesc">
                                <div class="projectHeader"> 
                                     <div class="programmingClass">
-                                        <img src="icons/html5.png">
+                                        <img src="icons/html5.png" alt="Image unavailable">
                                     </div>
                                     <div class="projectname">
-                                        <a href="https://opsecfail.github.io/"><p>OPSECFAIL.GITHUB.IO</p></a>
+                                        <p>OPSECFAIL.GITHUB.IO</p>
                                     </div>
                                </div>
                                <div class="projectDescription">
                                     <div class="projectDetails">
                                         <p>
-						OSF(OpSecFailures) is a site that lists how individuals messed up their opsec, 
-					  	no personal info is shared on this site
+                                            OSF(OpSecFailures) is a site that lists how individuals messed up their opsec, 
+                                            no personal info is shared on this site
                                         </p>
                                     </div>
                                     <div class="projectLogo">
-                                        <img src="images/staticImages/osf.png">
+                                        <img src="images/staticImages/osf.png" alt="Image unavailable">
                                     </div>
                                </div>
                                <div class="projectStats">
-                                    <div class="pStats">
-                                        <div class="githubStars">
-                                            <img src="icons/star.png">
+                                    <a href="https://opsecfail.github.io/" target="_blank">
+                                        <div class="ui-btn">
+                                            <span>
+                                                PREVIEW
+                                            </span>
                                         </div>
-                                    </div>
+                                    </a>
                                     <div class="download">
-                                        <img src="icons/download.png">
+                                        <a href="https://github.com/opsecfail/opsecfail.github.io/" target="_blank">
+                                            <img src="icons/github.png" alt="Image unavailable">
+                                        </a>
                                     </div>
+                                    
                                </div>
                         </div>
                     </div>
@@ -203,7 +222,7 @@
                         <div class="projectDesc">
                             <div class="projectHeader"> 
                                  <div class="programmingClass">
-                                     <img src="icons/html5.png">
+                                     <img src="icons/html5.png" alt="Image unavailable">
                                  </div>
                                  <div class="projectname">
                                      <p>UMM, NO PROJECT...</p>
@@ -216,22 +235,22 @@
                                      </p>
                                  </div>
                                  <div class="projectLogo">
-                                     <img src="images/staticImages/huh.png">
+                                     <img src="images/staticImages/huh.png" alt="Image unavailable">
                                  </div>
                             </div>
                             <div class="projectStats">
-                                 <div class="pStats">
-                                     <div class="githubStars">
-                                         <img src="icons/star.png">
-                                     </div>
-                                 </div>
+                                <div class="ui-btn">
+                                    <span>
+                                        PREVIEW
+                                    </span>
+                                </div>
                                  <div class="download">
-                                     <img src="icons/download.png">
+                                     <img src="icons/github.png" alt="Image unavailable">
                                  </div>
                             </div>
                      </div>
                     </div>
-                </div>	
+                </div>    
             </div>
             <!--end-->
             <!--crypto watcher-->
@@ -239,32 +258,34 @@
                 <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> <div class="livecoinwatch-widget-5" lcw-base="USD" lcw-color-tx="#999999" lcw-marquee-1="coins" lcw-marquee-2="movers" lcw-marquee-items="10" ></div>
             </div>
             <!--end-->
-            <!--footer and copyright-->
+            <!--footer and version-->
             <footer class="footer">
                 <div class="robot">
                     <div class="f1">
-                        <img src="images/gifs/robot.gif">
+                        <img src="images/gifs/robot.gif" alt="Image unavailable">
                      </div>
                 <div class="f2">
                     <div class="f8">
                         <b><p class="nb">Connect with me on:</p></b>
                     </div>
                     <div class="links">
-                        <a href="https://twitter.com/bugzorc" target="_blank"><img src="icons/x.png"></a>
-                        <a href="https://www.tiktok.com/@bugzorc" target="_blank"><img src="icons/titkok.png"></a>
-                        <a href="https://www.instagram.com/bugzorc/" target="_blank"><img src="icons/instagram.png"></a>
-                        <a href="https://t.me/bugzorc" target="_blank"><img src="icons/telegram.png"></a>
-                        <a href="https://www.reddit.com/user/bugzorc/" target="_blank"><img src="icons/reddit.png"></a>
-                        <a href="" target="_blank"><img src="icons/discord.jpg"></a>
-                        <a href="" target="_blank"><img src="icons/tox.png"></a>
-                        <a href="https://www.twitch.tv/bugzorc" target="_blank"><img src="icons/twitch.png"></a>
-                        <a href="https://www.youtube.com/@bugzorc" target="_blank"><img src="icons/youtube.png"></a>
+                        <a href="https://twitter.com/bugzorc" target="_blank"><img src="icons/x.png" alt="Image unavailable"></a>
+                        <a href="https://www.tiktok.com/@bugzorc" target="_blank"><img src="icons/titkok.png" alt="Image unavailable"></a>
+                        <a href="https://www.instagram.com/bugzorc/" target="_blank"><img src="icons/instagram.png" alt="Image unavailable"></a>
+                        <a href="https://t.me/bugzorc" target="_blank"><img src="icons/telegram.png" alt="Image unavailable"></a>
+                        <a href="https://www.reddit.com/user/bugzorc/" target="_blank"><img src="icons/reddit.png" alt="Image unavailable"></a>
+                        <a href="" target="_blank"><img src="icons/discord.jpg" alt="Image unavailable"></a>
+                        <a href="" target="_blank"><img src="icons/tox.png" alt="Image unavailable"></a>
+                        <a href="https://www.twitch.tv/bugzorc" target="_blank"><img src="icons/twitch.png" alt="Image unavailable"></a>
+                        <a href="https://www.youtube.com/@bugzorc" target="_blank"><img src="icons/youtube.png" alt="Image unavailable"></a>
                     </div>
                 </div>
                 </div>
+                <div class="webring">
+                    <a href="https://skullbunny.neocities.org/" target="_blank" style="height: 84%;"><img src="images/gifs/skullcandyTag.gif" alt="Image unavailable"></a>
+                </div>
                 <div class="f3">
-                    <div class="content"></div>
-                    <img src="images/gifs/animegirl.gif">
+                    <img src="images/gifs/animegirl.gif" alt="Image unavailable">
                 </div>
             </footer>
             
@@ -279,6 +300,5 @@
         V2.0/ V2.1 = home page/ blog home page
         V3.(current) = V2 theme renewed plus clean code
     -->
-
 </body>
 </html>
