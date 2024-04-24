@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
     <title>BUGZORC</title>
-    <style>@font-face {font-family: 'terminal'; src: url('fonts/terminal.ttf') format('truetype');} #random {font-family: 'terminal';}</style>
+    <style>@font-face {font-family: 'terminal'; src: url('fonts/terminal.ttf') format('truetype');} #random {font-family: 'terminal'; display: none;}</style>
     <script src="preloader.js"></script>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="global.css">
@@ -33,10 +33,19 @@
             "am not broke, I declare variables using $-php developer",
             "xss out of scope, but it's still a bug",
         ];
-        var randomIndex = Math.floor(Math.random() * randomTexts.length);
-        var randomText = randomTexts[randomIndex];
-        var randomDiv = document.getElementById('random');
-        randomDiv.textContent = randomText;
+        // Check if the Terminal font is loaded
+        var terminalFont = new FontFace('Terminal', 'url(path/to/terminal-font.woff2) format("woff2")');
+        terminalFont.load().then(function(loadedFont) {
+            document.fonts.add(loadedFont);
+            var randomIndex = Math.floor(Math.random() * randomTexts.length);
+            var randomText = randomTexts[randomIndex];
+            var randomDiv = document.getElementById('random');
+            randomDiv.textContent = randomText;
+            randomDiv.style.display = 'block'; // Show the text once font is loaded
+        }).catch(function(error) {
+            console.log('Font loading failed:', error);
+            // Handle font loading error here
+        });
     </script>
     <!--CONGRATULATIONS YOU HAVE FOUND MY SECRET MESSAGE
     CODE:4335$5 1.Bugzorc 2.Casusbelli
