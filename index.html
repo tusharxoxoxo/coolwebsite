@@ -34,7 +34,7 @@
             "xss out of scope, but it's still a bug",
         ];
         // Check if the Terminal font is loaded
-        var terminalFont = new FontFace('Terminal', 'url(path/to/terminal-font.woff2) format("woff2")');
+        var terminalFont = new FontFace('Terminal', 'url(fonts/terminal.ttf) format("truetype")');
         terminalFont.load().then(function(loadedFont) {
             document.fonts.add(loadedFont);
             var randomIndex = Math.floor(Math.random() * randomTexts.length);
@@ -44,7 +44,7 @@
             randomDiv.style.display = 'block'; // Show the text once font is loaded
         }).catch(function(error) {
             console.log('Font loading failed:', error);
-            // Handle font loading error here
+            // Fallback to system font or handle font loading error here
         });
     </script>
     <!--CONGRATULATIONS YOU HAVE FOUND MY SECRET MESSAGE
