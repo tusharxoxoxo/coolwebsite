@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
     <title>BUGZORC</title>
+    <style>#random {font-family: 'terminal';}</style>
     <script src="preloader.js"></script>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="global.css">
@@ -17,16 +18,9 @@
     <meta property="og:url" content="https://bugzorc.github.io/">
 </head>
 <body>
-    <!--css added here coz of the optimization of the preloader-->
-    <style>
-        @font-face {
-	        font-family: 'terminal';
-	        src: url('fonts/terminal.ttf') format('truetype');
-        }
-    </style>
     <div id="preloader">
         <div id="loader"></div>
-        <div style="font-family: 'terminal';" id="random"></div>
+        <div id="random"></div>
     </div>
     <script>
         var randomTexts = [
