@@ -3,10 +3,6 @@
 	src: url('fonts/ginto.otf') format('opentype');
 }
 @font-face {
-	font-family: 'terminal';
-	src: url('fonts/terminal.ttf') format('truetype');
-}
-@font-face {
 	font-family: 'woodpecker';
 	src: url('fonts/woodpecker.ttf') format('truetype');
 }
