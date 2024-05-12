@@ -1,0 +1,52 @@
+<center>
+    <img class="thumbnail" src="blogs/images/closePorts/premidPortError.png" alt="image unavailable">
+    <h1>CLOSE PROCESS RUNNING BASED ON PORT</h1>
+</center>
+<p>
+    A program couldn't start because port 3020 was already in use by another process. In this blog, 
+    we'll learn how to identify the process using a specific port.
+</p>
+<h3>Solution:</h3>
+<p>
+<span class="red">Open CMD</span>
+<br>
+<span class="tab">press <span class="block">WIN + R</span> then type <span class="block">ENTER</span></span>
+</p>
+<div class="image-container">
+<img src="blogs/images/closePorts/run.png" alt="image unavailable">
+</div>
+<p>
+<span class="red">Commands to type</span>
+<br>
+Now we going find out the PID of the process using the port.
+<br>
+<span class="tab">type <span class="block">netstat -ano | findstr : 3020</span></span>
+</p>
+<div class="image-container">
+<img src="blogs/images/closePorts/pid.png" alt="image unavailable">
+</div>
+<p>
+Bingo! That process is lacking on pid 1908. Now we gonna 
+use our enchanted command of sharpness 32k to send the process into
+the tech abyss.
+<br>
+<span class="tab">type <span class="block">taskkill /F /PID 1908</span></span>
+</p>
+<div class="image-container">
+<img src="blogs/images/closePorts/taskkill.png" alt="image unavailable">
+</div>
+<p>
+RIP process 1908, but we gotta be for sure dude is gone for real.
+</p>
+<div class="image-container">
+<img src="blogs/images/closePorts/dead.png" alt="image unavailable">
+</div>
+<p>
+doesn't even exist, so will the program now work?
+</p>
+<div class="image-container">
+<img src="blogs/images/closePorts/working.png" alt="image unavailable">
+</div>
+<p>
+Wonderful, now everyone can listen along with me...
+</p>

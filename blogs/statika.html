@@ -1,0 +1,75 @@
+    <center>
+    <img class="thumbnail" src="images/staticImages/blogv1.webp" alt="image unavailable">
+    <h1>BUGZORC.GITHUG.IO BLOG SYSTEM MANUAL [STATIKA]</h1>
+    </center>
+    <h3>Why I use my custom blog system</h3>
+    <p>
+      When using github pages we can't code in any server running language or framework, which makes one to be very limited. 
+      I have seen many other ways to generate blogs like jenkyll, though I love it am dreadfully in love with 
+      this site's theme plus am not gonna waste time modify jenkyll's source code to generate stuff like code snippets.
+      Markdown? Oh, I'd check on <a href="https://github.com/markedjs/marked" target="_blank">marked library</a>, tho I was about 
+      to reach my goal, it does all the feature that suites plus it doesn't have alot of features... I give it the name STATIKA, 
+      as in good for static pages.
+    </p>
+    <h3>How pages are generated</h3>
+    <p>
+      A javascript file reads the url which is like <span class="block">example.com/blog.html?file=statika.html</span>
+      copies the html from the file named blog.html from the blogs folder, it into the div with the class <span class="block">blogContent</span>, 
+      then it's automatically rendered by the browser, css to modify the blog is in blog.css. 
+      <br><br>
+      TIP:to write blogs fast, use VSCODE or any IDE that generates html with shortcuts, of example if I want to add
+      <span class="block">&lt;span class=&quot;block&quot;&gt;&lt;/span&gt;</span>, I would just type <span class="block">span.block.</span> 
+      then press <span class="block">Enter</span>.
+      <br><br>
+      Statika also comes a with print button, which gets content from the div with the ClassName blogContent. Source code for the print 
+      button is in print.js, you can make anything clickable just add <span class="block">onclick="printBlog()"</span>, also make source
+      to include the src path in ur header.
+    </p>
+    <h3>Let's test some stuff&#128568;</h3>
+    <p>
+      How about an old image:
+      <br>
+      <img src="images/staticImages/xp.jpeg" alt="Image unavailable" class="blogImage">
+      <br>
+      How about code:
+      <br>
+    <div class="snippet">
+      <pre>
+<code class="code">
+function greet() {
+console.log('Hello, World!'); 
+}</code>
+      </pre>
+    </div>
+    <p>
+      How about a long ahh code:
+    </p>
+    <div class="snippet">
+      <pre>
+<code class="code">
+function greet() {
+console.log('Hello, World!');  ajgajsgljgdjewio egiajgajsgljgdjewio egiajgajsgljgdjewio egiajgajsgljgdjewio egiajgajsgljgdjewio egiajgajsgljgdjewio egiajgajsgljgdjewio egiajgajsgljgdjewio egi
+}</code>
+      </pre>
+    </div>
+    <p>
+      What about line-based tokenization:
+      <br>
+      life is good, but it can be better
+      <br>
+      <span class="lbt">life is good, but it can be better</span>
+      <br><br>
+      What about tabs:
+      <br>
+      <span class="tab">tab be workin' all day</span>
+      <br><br>
+      I think that's all
+    </p>
+    <h3>How to write blogs</h3>
+    <p>
+      You can find the manual <a href="blogs/template.txt">here</a>.
+    </p>
+    <h3>Conclusion</h3>
+    <p>
+      To say the truth,<span class="block">STATIKA</span>, it's just pre-written css. Peace out🤭
+    </p>
