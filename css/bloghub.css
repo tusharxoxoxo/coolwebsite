@@ -1,0 +1,157 @@
+body {
+    position: fixed !important;
+    overflow-y: hidden !important;
+	height: 100% !important;
+	width: -webkit-fill-available;
+}
+
+/*css for the blog*/
+.bloghub {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	gap: 35px;
+}
+
+.left {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	gap: 6px;
+}
+.right {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	height: 100%;
+	gap: 6px;
+}
+.blogAnime img{
+	width: 100%;
+	border-radius: 12px;
+}
+.blogNav {
+	height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+	background-color: #222427;
+	cursor: pointer;
+	padding: 0 12px;
+    gap: 12px;
+    border-radius: 8px;
+}
+
+.blogNav:hover {
+	background-color: #783aff;
+}
+
+.blogNavIcon img{
+	height: 20px;
+}
+
+.blogNavSep {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.blogNavRight, .blogNavLeft {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.heading {
+	width: 99%;
+	background-color: black;
+	border: 1px solid #783aff;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.displayBlogs {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	height: 900px;
+	overflow-y: scroll;
+}
+
+.blog {
+	background-color:#222427;
+	height: 130px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.displayBlogs::-webkit-scrollbar {
+	width: 0;
+}
+
+.blog h4{
+	margin-bottom: 0px;
+}
+
+.blogThumbnail {
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	border-top-right-radius: 0%;
+	border-bottom-right-radius: 0%;
+}
+
+.blogThumbnail img{
+	width: 100%;
+	height: 100%;
+}
+
+.blogDetails {
+	display: flex;
+	flex-direction: column;
+}
+/*end*/
+/*bug fixes*/
+	/*on god, no bugs huh*/
+/*end*/
+/*ahh shit, here we go again for mobile*/
+@media (max-width: 980px) {
+	.bloghub{
+		flex-direction: column;
+		width: 100%;
+	}
+	.left {
+		width: 100%;
+	}
+	.blogNavSep{
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+	.blogNavRight {
+		width: 50%;
+	}
+	.blogNavLeft {
+		width: 50%;
+	}
+	.right {
+		width: 100%;
+	}
+	.blogThumbnail {
+		display: none;
+	}
+	.blogDetails{
+		padding: 4px;
+		justify-content: center;
+		align-items: center;
+	}
+	.blogDetails h4{
+		margin-top: 6px;
+	}
+}

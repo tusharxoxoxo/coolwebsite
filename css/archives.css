@@ -1,0 +1,43 @@
+/*css for banner*/
+.banner img{
+    height: 350px;
+    width: 100%;
+    border-radius: 8px;
+}
+/*end*/
+/*css for archives*/
+.archives {
+    width: 100%; /* Set parent width to 100% */
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow child elements to wrap */
+    gap: 20px;
+    justify-content: center;
+}
+
+.archive {
+    width: 240px; /* Set width of each child */
+    height: 350px;
+    border: 4px solid #783aff; /* Set border color */
+    transition: border-color 0.3s ease; /* Add transition for smooth border color change */
+}
+
+/* Change border color on hover */
+.archive:hover {
+    border-color: #a67dff;
+}
+
+.archiveImg {
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.archiveImg img{
+    width: 100%;
+    height: 100%;
+}
+
+.archiveDesc {
+    padding: 3px;
+}
+/*end*/

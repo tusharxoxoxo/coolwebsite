@@ -1,0 +1,135 @@
+body {
+    width: -webkit-fill-available;
+}    
+    
+/*css for anything in the blog*/
+.blogContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blogContent h1{
+    color: #783aff;
+    margin-bottom: 18px;
+}
+
+.blogContent h3{
+    color: #06945d;
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+
+.blogContent h3{
+    margin-top: 0px;
+}
+
+.blogContent p{
+    margin-top: 0px;
+    width: 100%
+}
+
+.blogContent a{
+    color: aqua !important;
+    text-decoration: underline !important;
+}
+
+.blogContent img{
+    border-radius: 8px;
+    margin: 16px 0;
+    width: auto;
+    max-width: 100%;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.lbt {
+    display: inline-block;
+    width: 20px; /* Adjust width as needed */
+}
+
+.tab {
+    display:inline-block; 
+    margin-left: 40px; 
+}
+
+.thumbnail{
+    width: 96% !important;
+    border-radius: 8px;
+}
+
+.block {
+    background-color: black; /* Black background */
+    border-radius: 4px; /* Border radius of 8px */
+    border: 1px solid #783aff; /* Purple border */
+    padding: 0 2px; /* Padding left and right of 2px */
+}
+
+.snippet {
+    background-color: #1e1e1e; /* Dark background */
+    border: 1px solid #783aff; /* 1px purple border */
+    padding: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    margin-bottom: 16px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+pre {
+    margin: 0px;
+    height: fit-content !important;
+}
+
+.red {
+    color: rgb(255, 41, 41);
+}
+/*end*/
+/*css for the footer*/
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+
+.discord {
+    height: 100%;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+}
+/*end*/
+/*ahh shit, here we go again for mobile devices*/
+@media only screen and (max-width: 760px) {
+    /*footer*/
+    .footer {
+        height: 120px;
+    }
+    .aboutMe {
+        width: fit-content;
+    }
+    .pfp {
+        display: none;
+    }
+    /*end*/
+}
