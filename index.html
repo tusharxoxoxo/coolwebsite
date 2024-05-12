@@ -8,21 +8,24 @@
     <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
     <title>BUGZORC</title>
     <style>@font-face {font-family: 'terminal'; src: url('fonts/terminal.ttf') format('truetype');} #random {font-family: 'terminal'; display: none;}</style>
-    <script src="preloader.js"></script>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="global.css">
-    <script src="index.js"></script>
-    <script src="blogCase.js"></script>
+    <script src="javascript/preloader.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/global.css">
+    <script src="javascript/index.js"></script>
+    <script src="javascript/blogCase.js"></script>
     <meta property="og:description" content="My portfolio, where I showcase my notable work and share valuable insights. Windows/Reverse Engineering/Malware Anlysis/C++/php">
     <meta property="og:image" content="https://bugzorc.github.io/images/staticImages/20240106_024331.jpg">
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="500" />
     <meta property="og:url" content="https://bugzorc.github.io/">
 </head>
+
 <body>
     <div id="preloader">
         <div id="loader"></div>
         <div id="random"></div>
     </div>
-      <script>
+    <script>
         var randomTexts = [
             "my website is not slow, it's ur wifi",
             "all praises to the most high",
@@ -30,7 +33,7 @@
             "nah, I code in 1s and 0s, the way God intended",
             "I don't need antivirus, I leave debuggers open",
             "am not useless, mosquitoes wait for me to have supper",
-            "am not broke, I declare variables using $-php developer",
+            "am not broke, I declare variables using $ -php developer",
             "xss out of scope, but it's still a bug",
         ];
         // Check if the Terminal font is loaded
@@ -49,19 +52,12 @@
     </script>
     <!--CONGRATULATIONS YOU HAVE FOUND MY SECRET MESSAGE
     decode this NDMyNQk1= and send it to me: 
-    1.Bugzorc 2.Casusbelli 3.zg200 4.Code_Dictator
-    5.tonabrix1
+    1.🍸Bugzorc 2.🍸Casusbelli 3.🍸zg200 4.🍸Code_Dictator
+    5.🍸tonabrix1
 
     send the code: twitter/telegram/discord @bugzorc
     -->
-    <!--code for oneko-->
-    <!--[if IE]>
-    <script src="./oneko-ie6.js"></script>
-    <![endif]-->
-    <!--[if !IE]><!-->
-    <script src="./oneko.js"></script>
-    <!--<![endif]-->
-    <!--end-->
+    <script src="javascript/oneko.js"></script>
     <div class="container">
         <div class="items">
 
@@ -97,7 +93,7 @@
             <!--navigation-->
             <div class="nav">
                 <div class="navGroup">
-                    <a href="blog/blog.html"> 
+                    <a href="bloghub.html"> 
                     <div class="tab tabBlogs">
                         <img src="icons/blog.png" class="tabimg1"  alt="blogs icon">
                         <p>Blogs</p>
@@ -117,10 +113,12 @@
                         <img src="icons/quiz.png" alt="quiz icon">
                         <p>Quizez</p>
                     </div>
+                    <a href="archives.html">
                     <div class="tab">
                         <img src="icons/museum.png" alt="museum icon">
                         <p>Archive</p>
-                    </div>
+                    </div>    
+                    </a>
                     <div class="tab tabUtilities">
                         <img src="icons/utilities.png" alt="utilities icon">
                         <p>Utilities</p>
@@ -151,11 +149,11 @@
                         <div class="blog1">
                             <div class="hover">
                                 <div class="image-wrapper">
-                                    <img class="blogImage" alt="Image unavailable">
+                                    <img src="images/staticImages/blogv1.webp" class="blogImage" alt="Image unavailable">
                                 </div>
                             </div>
-                            <div class="text-wrapper">
-                                <p class="pnormal blogDescription"></p>
+                            <div class="text-wrapper" style="padding-top: 0px;">
+                                <p class="pnormal blogDescription">My personal manual on how the blog system of this site works no hugo or jenkyll, uses plain html, which is automatically generated with the help of a little javascript.</p>
                             </div>
                         </div>
                     </div>
@@ -164,22 +162,22 @@
                         <div class="blog2">
                             <div class="hover">
                                 <div class="image-wrapper">
-                                    <img class="blogImage" alt="Image unavailable">
+                                    <img src="images/staticImages/comingsoon.jpg" class="blogImage" alt="Image unavailable" src>
                                 </div>
                             </div>
                             <div class="text-wrapper">
-                                <p class="pnormal blogDescription"></p>
+                                <p class="pnormal blogDescription">Blog comin' soon, check again in a while....</p>
                             </div>
                         </div>
 
                         <div class="blog2">
                             <div class="hover">
                                 <div class="image-wrapper">
-                                    <img class="blogImage" alt="Image unavailable">
+                                    <img src="images/staticImages/comingsoon.jpg" class="blogImage" alt="Image unavailable">
                                 </div>
                             </div>
                             <div class="text-wrapper">
-                                <p class="pnormal blogDescription"></p>
+                                <p class="pnormal blogDescription">Blog comin' soon, check again in a while....</p>
                             </div>
                         </div>
                     </div>
@@ -301,8 +299,12 @@
                 </div>
             </footer>
             
-            <div class="copyright">
-                <center><p>{opensource 2023-2024 V3.0}</p><c/enter>
+            <div class="opensource">
+                <center><p>{<a href="github.com/bugzorc/bugzorc.github.io"><span class="blue">opensource</span></a> 2023-2024 V3.0.0}</p></center>
+                <!--ayye it's 4.25Am 9/5/24, if you probably ever wanna use this site's
+                    template as your personal blog, besure to leave this div like this as 
+                    an attribute, goood luck with what yo doin', peace out :))
+                -->
             </div>
             <!--end-->
         </div>
