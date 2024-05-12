@@ -123,6 +123,11 @@ pre {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+
+.username {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
 /*end*/
 /*ahh shit, here we go again for mobile devices*/
 @media only screen and (max-width: 760px) {
